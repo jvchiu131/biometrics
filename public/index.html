@@ -3,18 +3,23 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biometrics</title>
+    <link rel="stylesheet" href="/public/style.css">
 </head>
 
 <body>
 
-    <div class="text-3xl">
+    <div class="{ error ? 'text-red-600' : 'text-green-600' }">
         <h1>Biometrics</h1>
     </div>
     
+    <div class="content-center">
     <label for="file">Browse File:</label>
     <input type="file" id="file" name="file">
+    </div>
+
     <pre>
         <div id="filescreen">
 
