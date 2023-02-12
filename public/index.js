@@ -7,4 +7,20 @@ document.getElementById("file").addEventListener('change', function(){
     }
 
     file_scanner.readAsText(this.files[0]);
+
+
 })
+
+
+function deletetxt(){
+    var btnDelete = document.getElementById("btnDelete");
+
+    
+        if(document.getElementById("filescreen").length != 0){
+
+           document.getElementById("filescreen").innerHTML = "";
+           document.getElementById("file").value = "";
+          return;
+        }
+  
+}
