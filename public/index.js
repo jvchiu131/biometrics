@@ -11,7 +11,9 @@ document.getElementById("file").addEventListener('change', function(){
         var file_array = file_scanner.result.split(' ');
 
        for(var line = 0; line < file_array.length - 1; line++){
-           //console.log(file_array[line])
+           if(line == 2){
+               console.log(file_array[line]);
+           }
            file_screen.innerHTML = file_array;
           
        }
